@@ -7,7 +7,7 @@ import java.util.Set;
  * @author EricRaww
  * @create 2020-11-05
  */
-public class LengthOfLongestSubString {
+public class N3LengthOfLongestSubString {
     public static void main(String[] args) {
         //aab
         //abcabcbb

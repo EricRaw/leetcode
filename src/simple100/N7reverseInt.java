@@ -12,7 +12,7 @@ package simple100;
  * 输出: 21
  * 32 位的有符号整数，则其数值范围为 [−231,  231 − 1]。
  */
-public class reverseInt {
+public class N7reverseInt {
 
     public static void main(String[] args) {
         int i=-120;

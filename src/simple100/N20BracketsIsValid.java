@@ -14,7 +14,7 @@ import java.util.Map;
  * <p>
  * 解题思路 用栈
  */
-public class BracketsIsValid {
+public class N20BracketsIsValid {
     public static void main(String[] args) {
         String s = "{[()]}";
 //        String s = "){";
