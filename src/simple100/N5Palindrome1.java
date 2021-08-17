@@ -3,7 +3,9 @@ package simple100;
 /**
  * @author EricRaww
  * @create 2021-08-08
- * @description
+ * @description 暴力求解
+ * 时间复杂度：O(n的三次方)，n为字符串的长度
+ * 空间复杂度：O(1),只用到常数个的临时变量
  */
 public class N5Palindrome1 {
     public static void main(String[] args) {
