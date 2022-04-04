@@ -9,34 +9,28 @@ package simple100;
  * 用 f(x)f(x) 表示爬到第 xx 级台阶的方案数，考虑最后一步可能跨了一级台阶，也可能跨了两级台阶，所以我们可以列出如下式子：
  * f(x)=f(x−1)+f(x−2)
  */
-public class N70ClimbStairs1 {
+public class N70ClimbStairs2dp {
     public static void main(String[] args) {
         int i = climbStairs(45);
         System.out.println(i);
     }
 
     /**
-     * 方法一：递归,使用memo数组保存了每次计算的结果
-     * 相比于只使用递归， 快了很多
+     * 方法三：动态规划
      * @param n
      * @return
      */
     private static int climbStairs( int n){
-        int memo[]=new int[n+1];
-        return climbStairsMemo(n,memo);
-    }
-    private static int climbStairsMemo(int n,int memo[]){
-        if(memo[n]>0){
-            return memo[n];
+        if (n==1){
+            return 1;
         }
-        if (n == 1){
-            memo[n]=1;
-        }else if(n ==2){
-            memo[n]=2;
-        }else {
-            memo[n]=climbStairsMemo(n-1,memo)+climbStairsMemo(n-2,memo);
+        int [] dp=new int[n+1];
+        dp[1]=1;
+        dp[2]=2;
+        for (int i = 3; i <=n ; i++) {
+            dp[i]=dp[i-1]+dp[i-2];
         }
-        return memo[n];
+        return dp[n];
     }
 
 }

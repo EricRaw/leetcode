@@ -7,7 +7,7 @@ package simple100;
  *
  * 每次你可以爬 1 或 2 个台阶。你有多少种不同的方法可以爬到楼顶呢？
  * 用 f(x)f(x) 表示爬到第 xx 级台阶的方案数，考虑最后一步可能跨了一级台阶，也可能跨了两级台阶，所以我们可以列出如下式子：
- *
+ *   f(x)=f(x−1)+f(x−2)
  */
 public class N70ClimbStairs {
     public static void main(String[] args) {
